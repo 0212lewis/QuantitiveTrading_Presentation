@@ -1,6 +1,10 @@
 /**
  * Created by pc on 2017/6/1.
  */
+function turn(code) {
+    window.location.href = "../pages/SingleStock.html?code="+code;
+}
+
 Vue.prototype.$echarts = echarts;
 
 var vm = new Vue({
@@ -14,6 +18,7 @@ var vm = new Vue({
         ]
     },
     methods:{
+
         getCookieValue:function (cname) {
             var name = cname + "=";
             var ca = document.cookie.split(';');
